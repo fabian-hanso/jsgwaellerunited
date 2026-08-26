@@ -1,5 +1,6 @@
 import Card from "@/components/shared/Card";
 import CarouselPreview from "@/components/shared/Carousel";
+import SocialCampagne from "@/components/shared/SocialCampagne";
 
 const cardItems = [
   {
@@ -37,6 +38,7 @@ export default function Home() {
             <Card key={cardItem.id} item={cardItem}/>
           ))}
         </div>
+        <SocialCampagne />
       </main>
   );
 }
