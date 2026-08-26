@@ -133,7 +133,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <dl className="mt-24 divide-y divide-gray-900/10">
+            <dl className="mt-6 lg:mt-24 divide-y divide-gray-900/10">
               <Disclosure as="div" className="first:pt-0 last:pb-0">
                 <dt>
                   <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900 bg-gray-100 p-5 cursor-pointer">
