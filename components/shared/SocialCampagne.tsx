@@ -24,7 +24,7 @@ export default function SocialCampagne() {
           />
           <div className="absolute inset-0 -z-10 h-full w-full bg-stone-900/95" />
           <div className="px-6 py-24 sm:px-16 sm:py-32 lg:px-24 text-center lg:text-left">
-            <h2 className="text-balance text-2xl font-bold italic tracking-tight text-white sm:text-4xl">
+            <h2 className="text-balance text-2xl font-bold italic text-white sm:text-4xl">
             Folge uns auf Instagram!
           </h2>
           <p className="mt-6 max-w-xl text-pretty text-lg/8 text-white italic">
@@ -35,7 +35,7 @@ export default function SocialCampagne() {
               href="https://www.instagram.com/waeller_united"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-x-2 bg-white px-3.5 py-2.5 text-sm font-semibold text-blue-900 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-x-2 bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               <InstagramIcon aria-hidden="true" className="size-5" />
               Instagram
