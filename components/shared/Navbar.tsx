@@ -58,8 +58,8 @@ export default function Navbar() {
   return (
     <header className="bg-white sticky top-0 z-100 shadow-md">
       <div className='bg-gray-200 px-6 py-2 lg:px-8 flex-row-reverse gap-12 hidden lg:flex'>
-        <a href="" className='self-end text-gray-800 font-bold italic text-sm/6'>Impressum</a>
-        <a href="" className='self-end text-gray-800 font-bold italic text-sm/6'>Mitglied werden</a>
+        <a href="" className='self-end text-gray-800 font-bold italic text-xs/6'>Impressum</a>
+        <a href="" className='self-end text-gray-800 font-bold italic text-xs/6'>Mitglied werden</a>
       </div>
       <nav aria-label="Global" className="mx-auto flex items-center justify-between px-6 py-4 lg:px-8">
         <div className="flex lg:flex-1">
@@ -104,7 +104,7 @@ export default function Navbar() {
                 {products.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-50"
                   >
                     <div className="flex-auto">
                       <a href={item.href} className="block font-semibold text-gray-900">
@@ -122,7 +122,7 @@ export default function Navbar() {
           <a href="#" className="text-sm/6 font-bold italic text-gray-900">
             VEREIN
           </a>
-          <a href="#" className="text-sm/6 font-bold italic text-gray-900">
+          <a href="/kontakt" className="text-sm/6 font-bold italic text-gray-900">
             KONTAKT
           </a>
           <a href="#" className="text-sm/6 font-bold italic text-gray-900">
@@ -166,11 +166,11 @@ export default function Navbar() {
               <div className="space-y-2 py-4">
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Product
+                    Mannschaften
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
+                    {products.map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"
@@ -186,29 +186,22 @@ export default function Navbar() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Features
+                  Verein
+                </a>
+                <a
+                  href="/kontakt"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Kontakt
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Company
+                  Partner
                 </a>
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
-              </div>
+              {/* Social Links hier! */}
             </div>
           </div>
         </DialogPanel>

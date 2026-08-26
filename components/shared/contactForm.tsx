@@ -116,7 +116,7 @@ export default function ContactForm() {
           </div>
           <div className="flex gap-x-4 sm:col-span-2">
             <div className="flex h-6 items-center">
-              <div className="group relative inline-flex w-8 shrink-0 rounded-full bg-gray-200 p-px outline-offset-2 outline-indigo-600 ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out has-[:checked]:bg-indigo-600 has-[:focus-visible]:outline has-[:focus-visible]:outline-2">
+              <div className="group relative inline-flex w-8 shrink-0 rounded-full bg-gray-200 p-px outline-offset-2 outline-indigo-600 ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out has-[:checked]:bg-gray-900 has-[:focus-visible]:outline has-[:focus-visible]:outline-2">
                 <span className="size-4 rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition-transform duration-200 ease-in-out group-has-[:checked]:translate-x-3.5" />
                 <input
                   id="agree-to-policies"
@@ -129,14 +129,14 @@ export default function ContactForm() {
             </div>
             <label htmlFor="agree-to-policies" className="text-sm/6 text-gray-600">
               By selecting this, you agree to our{' '}
-              <a href="#" className="whitespace-nowrap font-semibold text-indigo-600">
+              <a href="#" className="whitespace-nowrap font-semibold text-blue-700">
                 privacy policy
               </a>
               .
             </label>
           </div>
         </div>
-        <div className="mt-10">
+        <div className="mt-6">
           <button
             type="submit"
             className="block w-full bg-gray-900 px-3.5 py-2.5 text-center text-sm font-bold italic text-white hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-900 cursor-pointer"

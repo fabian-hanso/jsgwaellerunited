@@ -2,10 +2,10 @@ import type { SVGProps } from 'react'
 
 const navigation = {
   solutions: [
-    { name: 'A-Jugend I', href: '#' },
-    { name: 'A-Jugend II', href: '#' },
-    { name: 'B-Jugend', href: '#' },
-    { name: 'C-Jugend', href: '#' },
+    { name: 'A-Jugend I', href: '/mannschaften/a-jugend-1' },
+    { name: 'A-Jugend II', href: '/mannschaften/a-jugend-1' },
+    { name: 'B-Jugend', href: '/mannschaften/a-jugend-1' },
+    { name: 'C-Jugend', href: '/mannschaften/a-jugend-1' },
   ],
   support: [
     { name: 'Verein', href: '#' },
@@ -18,7 +18,7 @@ const navigation = {
   ],
   legal: [
     { name: 'Impressum', href: '#' },
-    { name: 'Kontakt', href: '#' },
+    { name: 'Kontakt', href: '/kontakt' },
   ],
   social: [
     {
