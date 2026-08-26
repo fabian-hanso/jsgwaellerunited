@@ -82,8 +82,14 @@ export default function Home() {
         <div className="bg-background-50 flex items-center justify-center relative aspect-3/2 lg:aspect-5/2 lg:max-h-[calc(100vh-80px)] overflow-hidden">
             <img src="/A-Team.jpg" alt="" className="w-full h-full object-cover object-top" />
         </div>
+
+        <div className="mx-auto max-w-7xl text-left pt-24 px-6 lg:px-8">
+            <h2 className="text-balance text-4xl tracking-tight text-gray-900 sm:text-4xl font-bold italic">A-JUGEND I</h2>
+            <p className="mt-1 text-lg/8 italic text-gray-900">Rheinlandliga</p>
+        </div>
+
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
-            <h2 className="text-gray-900 font-bold italic text-xl">MANNSCHAFTSKADER</h2>
+            <h2 className="text-gray-900 font-bold italic text-xl">MANNSCHAFT</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4">
                 <div className="order-1 lg:order-1 lg:col-span-2 text-gray-900 grid geid-cols-1 md:grid-cols-2 gap-6">
                     {teamData.teamPlayers.goalkeepers.map((player) => (
@@ -159,12 +165,7 @@ export default function Home() {
                   </DisclosureButton>
                 </dt>
                 <DisclosurePanel as="dd" className="" unmount={false}>
-                    <div 
-  className="fussballde_widget"
-  data-id="141ccee6-0751-49d5-b668-18619f3300e4"
-  data-type="table"
-  style={{ width: "100%" }}
-></div>
+                    <div className="fussballde_widget" data-id="141ccee6-0751-49d5-b668-18619f3300e4" data-type="table" style={{ width: "100%" }}></div>
                 </DisclosurePanel>
               </Disclosure>
           </dl>
