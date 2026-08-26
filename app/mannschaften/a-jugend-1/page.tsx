@@ -83,15 +83,15 @@ export default function Home() {
             <img src="/A-Team.jpg" alt="" className="w-full h-full object-cover object-top" />
         </div>
 
-        <div className="mx-auto max-w-7xl text-left pt-24 px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl text-left pt-12 md:pt-24 px-6 lg:px-8">
             <h2 className="text-balance text-4xl tracking-tight text-gray-900 sm:text-4xl font-bold italic">A-JUGEND I</h2>
             <p className="mt-1 text-lg/8 italic text-gray-900">Rheinlandliga</p>
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 md:py-24">
             <h2 className="text-gray-900 font-bold italic text-xl">MANNSCHAFT</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4">
-                <div className="order-1 lg:order-1 lg:col-span-2 text-gray-900 grid geid-cols-1 md:grid-cols-2 gap-6">
+                <div className="order-1 lg:order-1 lg:col-span-2 text-gray-900 grid grid-cols-1 md:grid-cols-2 gap-6">
                     {teamData.teamPlayers.goalkeepers.map((player) => (
                         <PlayerCard item={player} key={player.id}/>
                     ))}
@@ -106,7 +106,7 @@ export default function Home() {
                     <div className="flex flex-col gap-6 mt-4 mb-4">
                         {teamData.teamDetails.trainings.map((training) => (
                             <div key={training.id} className="w-full flex">
-                                <div className="h-16 w-10 bg-blue-900 flex justify-center items-center">
+                                <div className="h-16 w-10 bg-gray-900 flex justify-center items-center">
                                     <p className="text-white font-bold italic -rotate-90">
                                         {training.weekday}
                                     </p>
@@ -124,7 +124,7 @@ export default function Home() {
                     <div className="flex flex-col gap-6 mt-4">
                         {teamData.teamDetails.contactPersons.map((person) => (
                             <div key={person.id} className="w-full flex">
-                                <div className="h-16 w-10 bg-blue-900 flex justify-center items-center">
+                                <div className="h-16 w-10 bg-gray-900 flex justify-center items-center">
                                     <p className="text-white font-bold italic -rotate-90">
                                         {person.id}
                                     </p>
