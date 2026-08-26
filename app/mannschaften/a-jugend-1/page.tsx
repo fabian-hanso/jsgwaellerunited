@@ -1,6 +1,7 @@
-import Card from "@/components/shared/Card";
-import CarouselPreview from "@/components/shared/Carousel";
 import PlayerCard from "@/components/shared/PlayerCard";
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
+
 
 const teamData = {
     players: [],
@@ -131,7 +132,24 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="fussballde_widget mt-24" data-id="5e25efa9-ff80-4720-8b74-8a2058e970a2" data-type="team-matches" style={{ width: "100%" }}></div>
+
+            <dl className="mt-16 divide-y divide-gray-900/10">
+              <Disclosure as="div" className="py-6 first:pt-0 last:pb-0">
+                <dt>
+                  <DisclosureButton className="group flex w-full items-start justify-between text-left text-gray-900 bg-gray-100 p-5 cursor-pointer">
+                    <span className="text-base/7 font-semibold italic">Spielplan</span>
+                    <span className="ml-6 flex h-7 items-center">
+                      <PlusSmallIcon aria-hidden="true" className="size-6 group-data-[open]:hidden" />
+                      <MinusSmallIcon aria-hidden="true" className="size-6 group-[:not([data-open])]:hidden" />
+                    </span>
+                  </DisclosureButton>
+                </dt>
+                <DisclosurePanel as="dd" className="" unmount={false}>
+                    <div className="fussballde_widget" data-id="5e25efa9-ff80-4720-8b74-8a2058e970a2" data-type="team-matches" style={{ width: "100%" }}></div>
+                </DisclosurePanel>
+              </Disclosure>
+          </dl>
+
         </div>
       </main>
   );
