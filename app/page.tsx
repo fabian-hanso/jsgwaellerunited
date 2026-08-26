@@ -12,11 +12,11 @@ const cardItems = [
   },
   {
     id: 2,
-    headline: "Ehrenamt",
+    headline: "Mannschaften",
     src: "/FHA09200.jpg",
-    badge: "Vereinsleben",
-    description: "Erfahre mehr über das Ehrenamt bei uns im Verein.",
-    href: "/mannschaft/a-1"
+    badge: "Teams",
+    description: "Direkt zu den Mannschaften der Jugend Spiel Gemeinschaft.",
+    href: "/mannschaften/a-jugend-1"
   },
   {
     id: 3,

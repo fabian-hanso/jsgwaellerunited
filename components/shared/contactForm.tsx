@@ -2,12 +2,12 @@ import { ChevronDownIcon } from '@heroicons/react/16/solid'
 
 export default function ContactForm() {
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div className="mx-auto max-w-4xl text-left">
+    <div className="isolate bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl text-left px-6 lg:px-8">
         <h2 className="text-balance text-4xl tracking-tight text-gray-900 sm:text-4xl font-bold italic">KONTAKT</h2>
         <p className="mt-2 text-lg/8 text-gray-600">Wir vermitteln dir schnellstmöglich den richtigen Ansprechpartner.</p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-4xl sm:mt-20">
+      <form action="#" method="POST" className="mx-auto mt-16 max-w-7xl sm:mt-20 px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm/6 font-semibold italic text-gray-900">
@@ -19,7 +19,7 @@ export default function ContactForm() {
                 name="first-name"
                 type="text"
                 autoComplete="given-name"
-                className="block w-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                className="block w-full bg-white px-3.5 py-2 text-base italic text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
               />
             </div>
           </div>
@@ -33,7 +33,7 @@ export default function ContactForm() {
                 name="last-name"
                 type="text"
                 autoComplete="family-name"
-                className="block w-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                className="block w-full bg-white px-3.5 py-2 text-base italic text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
               />
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function ContactForm() {
                 name="email"
                 type="email"
                 autoComplete="email"
-                className="block w-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                className="block w-full bg-white px-3.5 py-2 text-base italic text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
               />
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function ContactForm() {
                   name="phone-number"
                   type="text"
                   placeholder="Deine Nummer"
-                  className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                  className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base italic text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function ContactForm() {
                 name="company"
                 type="text"
                 autoComplete="organization"
-                className="block w-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                className="block w-full bg-white px-3.5 py-2 text-base italic text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
               />
             </div>
           </div>
@@ -114,8 +114,9 @@ export default function ContactForm() {
                 id="message"
                 name="message"
                 rows={4}
-                className="block w-full bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
+                className="block w-full bg-white px-3.5 py-2 text-base italic text-gray-900 outline outline-1 -outline-offset-1 outline-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900"
                 defaultValue={''}
+                placeholder='Deine Nachricht an uns ...'
               />
             </div>
           </div>
@@ -133,9 +134,9 @@ export default function ContactForm() {
               </div>
             </div>
             <label htmlFor="agree-to-policies" className="text-sm/6 text-gray-600">
-              By selecting this, you agree to our{' '}
+              Meine Daten dürfen zum Zwecke der Bearbeitung gespeichert werden{' '}
               <a href="#" className="whitespace-nowrap font-semibold text-blue-700">
-                privacy policy
+                Datenschutz
               </a>
               .
             </label>

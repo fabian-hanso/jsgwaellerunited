@@ -100,7 +100,7 @@ export default function Home() {
                         <PlayerCard item={player} key={player.id}/>
                     ))}
                 </div>
-                <div className="order-2 lg:order-2 w-full h-auto lg:sticky lg:top-36 lg:self-start text-gray-900 p-4 border border-blue-900">
+                <div className="order-2 lg:order-2 w-full h-auto lg:sticky lg:top-32 lg:self-start text-gray-900 p-4 border border-blue-900">
                     <p className="font-bold italic text-sm/6">TRAININGSTAGE:</p>
 
                     <div className="flex flex-col gap-6 mt-4 mb-4">

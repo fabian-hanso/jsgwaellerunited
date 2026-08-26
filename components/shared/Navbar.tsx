@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, type SVGProps } from 'react'
+import { useEffect, useRef, useState, type SVGProps } from 'react'
 import {
   Dialog,
   DialogPanel,
@@ -54,9 +54,25 @@ const navigation = {
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const stickySentinelRef = useRef<HTMLDivElement>(null)
+  const [isStuck, setIsStuck] = useState(false)
+
+  useEffect(() => {
+    const sentinel = stickySentinelRef.current
+    if (!sentinel) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsStuck(!entry.isIntersecting),
+      { threshold: 0 }
+    )
+    observer.observe(sentinel)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <header className="bg-white sticky top-0 z-100 shadow-md">
+    <>
+      <div ref={stickySentinelRef} />
+      <header className="bg-white sticky top-0 z-100 shadow-md">
       <div className='bg-gray-200 px-6 py-2 lg:px-8 flex-row-reverse gap-12 hidden lg:flex'>
         <a href="" className='self-end text-gray-800 font-bold italic text-xs/6'>Impressum</a>
         <a href="" className='self-end text-gray-800 font-bold italic text-xs/6'>Mitglied werden</a>
@@ -68,7 +84,7 @@ export default function Navbar() {
             <img
               alt="/"
               src="/Logo.svg"
-              className="h-12 w-auto"
+              className={`h-12 w-auto transition-all duration-200 ${isStuck ? "lg:h-8" : "lg:h-12"}`}
             />
           </Link>
         </div>
@@ -218,6 +234,7 @@ export default function Navbar() {
           </div>
         </DialogPanel>
       </Dialog>
-    </header>
+      </header>
+    </>
   )
 }
