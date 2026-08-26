@@ -68,6 +68,11 @@ export default function ContactForm() {
                     className="col-start-1 row-start-1 w-full appearance-none py-2 pl-3.5 pr-7 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-900 sm:text-sm/6"
                   >
                     <option>+49</option>
+                    <option>+43</option>
+                    <option>+41</option>
+                    <option>+31</option>
+                    <option>+48</option>
+                    <option>+352</option>
                   </select>
                   <ChevronDownIcon
                     aria-hidden="true"
